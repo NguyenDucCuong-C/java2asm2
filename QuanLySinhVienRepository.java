@@ -23,7 +23,7 @@ public class QuanLySinhVienRepository {
     public QuanLySinhVienRepository(){
         this.sConn = DBSQLServer.getConnection();
     }
-    
+    //lấy dữ liệu từ database sang
     public ArrayList<Student> filltable(){
         String sql = "select MaSV,Hoten,Email,SDT,GioiTinh,DiaChi,HinhAnh from SinhVien";
         
